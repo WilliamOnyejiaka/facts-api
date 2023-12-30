@@ -100,7 +100,6 @@ def get_fact():
         print(e)
         return jsonify(internal_server_error), 500
 
-    print(fact)
     return jsonify({
         'error': False,
         'fact': fact[0].upper() + fact[1:]
